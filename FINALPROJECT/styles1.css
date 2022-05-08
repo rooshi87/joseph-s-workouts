@@ -1,0 +1,109 @@
+h1 {
+    border: 15px;
+    color:rgb(255, 255, 255);
+    text-align: center;
+    font-size: 400%;
+    display: block;
+
+
+    background-color: rgb(84, 38, 153);
+    font-family: fantasy; 	
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;  
+    box-shadow: rgb(79, 28, 92) 0px 10px 25px;
+}
+
+body {background-image: url(gymbackground.jpg)}
+
+video { 
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    
+}
+h1 > video {
+    display: block;
+
+
+}
+p {
+    background-color: navajowhite;
+}
+figure#figure1{
+    transform: rotateX(30deg) translateZ(50px);
+    box-shadow: rgb(145, 58, 137) 0px 10px 25px;
+}
+
+
+video {
+    border: 10px;
+    padding: 10px;
+
+}
+img {
+    border:10px;
+    padding:10px;
+}
+nav ul {
+    list-style: none;
+    list-style-image: none;
+ }
+ 
+ nav a {
+    text-decoration: none;
+ }
+ nav, section { 
+    display: block;
+ }
+ 
+
+
+ body > header > nav#topLinks {
+	background-color: rgb(198, 171, 201);
+	color: white;
+	line-height: 1.7em;
+	text-align: center;
+	padding: 5px 10px 5px 0px;
+}
+
+
+nav#topLinks a:link, nav#topLinks a:visited {
+	color: white;
+}
+
+nav#topLinks a:hover, nav#topLinks a:active {
+	color: rgb(197, 122, 163);
+}
+
+nav#mainLinks ul li {
+	background-color: rgb(130, 82, 158);	
+	display: block;
+	float: left;
+	text-align: center;
+	width: 30%;	
+    
+}
+
+nav#mainLinks ul li a {
+	color: white;	
+	display: block;
+	height: 2.5em;	
+	text-align: center;
+	line-height: 2.5em;	
+}
+
+nav#mainLinks a:link, nav#mainLinks a:visited {
+	color: white;
+}
+
+nav#mainLinks a:hover, nav#mainLinks a:active {
+	background-color: rgb(170, 63, 156);
+}
+table {
+background: linear-gradient(to bottom, rgb(179, 20, 179), rgb(255, 255, 255));   
+}
+img {border: 10px solid purple }
+img {padding: 1px}
+
+

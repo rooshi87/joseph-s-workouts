@@ -1,0 +1,127 @@
+<html>
+
+<head>
+    <link rel='stylesheet' href='styles2.css'/>
+    <title>Membership</title>
+    <script>
+        function doClear()
+        {
+            document.Membershipform.customer.value = "";
+            document.Membershipform.address.value = "";
+            document.Membershipform.city.value = "";
+            document.Membershipform.state.value = "";
+            document.Membershipform.zip.value = "";
+            document.Membershipform.phone.value = "";
+            document.Membershipform.other.value = "";
+
+            document.Membershipform.sizes[0].checked = false;
+            document.Membershipform.sizes[1].checked = false;
+            document.Membershipform.sizes[2].checked = false;
+
+            document.Membershipform.boxes[0].checked = false;
+            document.Membershipform.boxes[1].checked = false;
+            document.Membershipform.boxes[2].checked = false;
+            document.Membershipform.boxes[3].checked = false;
+            document.Membershipform.boxes[4].checked = false;
+            document.Membershipform.boxes[5].checked = false;
+            document.Membershipform.boxes[6].checked = false;
+            document.Membershipform.boxes[7].checked = false;
+            document.Membershipform.boxes[8].checked = false;
+            document.Membershipform.boxes[9].checked = false;
+            return;
+
+        }
+
+
+        function doSubmit()
+        {
+            if (validateText() == false)
+            {
+                alert("Required data missing in Step 1");
+                return;
+            }
+            if (validateRadio() == false)
+            {
+                alert("Required data missing in step 2");
+                return;
+            }
+            alert("Your Membership has been submitted! We hope to see you soon. :)");
+            return;
+        }
+
+        function validateText()
+        {
+            var customer = document.Membershipform.customer.value;
+            if (customer.length == 0) return false;
+            var address = document.Membershipform.address.value;
+            if (address.length == 0) return false;
+            var city = document.Membershipform.city.value;
+            if (city.length == 0) return false;
+            var phone = document.Membershipform.phone.value;
+            if (phone.length == 0) return false;
+            return true;
+        }
+
+        function validateRadio()
+        {
+            if (document.Membershipform.sizes[0].checked) return true;
+            if (document.Membershipform.sizes[1].checked) return true;
+            if (document.Membershipform.sizes[2].checked) return true;
+            return false;
+        }
+    </script>
+</head>
+
+<body>
+    <form name="Membershipform">
+        <h1>Membership for Joseph's workouts</h1>
+        <p>
+
+            <h4>Step 1: Enter your name, address, and phone number:</h4>
+            <font face="Courier New">
+                Name: &nbsp;&nbsp;&nbsp;<input name="customer" size="50"
+                type="text"><br>
+                Address: <input name="address" size="50" type="text"><br>
+                City: &nbsp;&nbsp;&nbsp;<input name="city" size="15" type="text">
+                State: <input name="state" size="5" type="TEXT">
+                Zip: <input name="zip" size="5" type="text"><br>
+                Phone: &nbsp;&nbsp;<input name="phone" size="50" type="text"><br>
+
+            </font>
+        </p>
+        <p>
+            <h4>Step 2: Select what level of membership you want:</h4>
+            <font face="Courier New">
+                <input name="sizes" type="radio">Average
+                <input name="sizes" type="radio">beneficial
+                <input name="sizes" type="radio">Super Extra<br>
+
+            </font>
+        </p>
+        <p>
+            <h4>Step 3: Tell us why you want to join our gym? <br> We'd like to know more about our guests! <br> We don't judge. (Too harshly)</h4>
+            <font face="Courier New">
+                <input name="boxes" type="checkbox">Getting in shape
+                <input name="boxes" type="checkbox">Impress somebody
+
+                <input name="boxes" type="checkbox">Wanna look big<br>
+
+                <input name="boxes" type="checkbox">Want to lift some weights
+                <input name="boxes" type="checkbox">Honestly don't know yet lmao<br>
+                <input name="boxes" type="checkbox">New experiences
+                <input name="boxes" type="checkbox">A new routine 
+                <input name="boxes" type="checkbox">A new hobby <br>
+
+
+                Other: &nbsp;&nbsp;&nbsp;<input name="other" size="50"
+                type="text"><br>
+                <br>
+
+            </font>
+            <input type="button" value="Submit Order" onclick="doSubmit()">
+            <input type="button" value="Clear Entries" onclick="doClear()">
+        </p>
+    </form>  
+    <p><a href="index.html">Back to home</a></p>
+</body>
+</html>

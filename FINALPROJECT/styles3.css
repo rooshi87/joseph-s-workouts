@@ -1,0 +1,220 @@
+h1 {
+    background: transparent;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    background-color: rgb(182, 81, 186);
+   font-family: Verdana, Geneva, Arial, sans-serif; 
+}
+aside {
+    background-color: rgb(169, 125, 173);
+    padding-bottom: 2em;
+ }
+ 
+ 
+ aside > h1 {
+    text-align: center;
+    background-color: rgb(55, 46, 104);
+    color: rgb(201, 201, 201);
+ }
+ 
+
+
+
+
+
+
+ h1 {
+    border: 15px;
+    color:rgb(255, 255, 255);
+    text-align: center;
+    font-size: 400%;
+    display: block;
+
+
+    background-color: rgb(84, 38, 153);
+    font-family: fantasy; 	
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;  
+    box-shadow: rgb(79, 28, 92) 0px 10px 25px;
+}
+
+
+
+video { 
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    
+}
+h1 > video {
+    display: block;
+
+
+}
+p {
+    background-color: rgb(195, 173, 255);
+}
+figure#figure1{
+    transform: rotateX(30deg) translateZ(50px);
+    box-shadow: rgb(145, 58, 137) 0px 10px 25px;
+}
+
+
+video {
+    border: 10px;
+    padding: 10px;
+
+}
+img {
+    border:10px;
+    padding:10px;
+}
+nav ul {
+    list-style: none;
+    list-style-image: none;
+ }
+ 
+ nav a {
+    text-decoration: none;
+ }
+ nav, section { 
+    display: block;
+ }
+ 
+
+
+ body > header > nav#topLinks {
+	background-color: rgb(113, 76, 117);
+	color: white;
+	line-height: 1.7em;
+	text-align: center;
+	padding: 5px 10px 5px 0px;
+}
+
+
+nav#topLinks a:link, nav#topLinks a:visited {
+	color: white;
+}
+
+nav#topLinks a:hover, nav#topLinks a:active {
+	color: rgb(197, 122, 163);
+}
+
+nav#mainLinks ul li {
+	background-color: rgb(130, 82, 158);	
+	display: block;
+	float: left;
+	text-align: center;
+	width: 30%;	
+    
+}
+
+nav#mainLinks ul li a {
+	color: white;	
+	display: block;
+	height: 2.5em;	
+	text-align: center;
+	line-height: 2.5em;	
+}
+
+nav#mainLinks a:link, nav#mainLinks a:visited {
+	color: white;
+}
+
+nav#mainLinks a:hover, nav#mainLinks a:active {
+	background-color: rgb(170, 63, 156);
+}
+table {
+background: linear-gradient(to bottom, rgb(179, 20, 179), rgb(255, 255, 255));   
+}
+img {border: 10px solid purple }
+img {padding: 1px}
+
+
+
+
+
+
+.menu {
+    height: 200px;
+    background-color: #B2D6FF;    /* Medium blue */
+  }
+  
+  .content {
+    height: 500px;
+    background-color: #F5CF8E;    /* Yellow */
+  }
+  
+  
+  .sidebar {
+    width: 50%;                 /* Add this */
+    height: 50%;
+    background-color: #F09A9D;
+  }
+  .page {
+    width: 900px;
+    margin: 0 auto;
+  }
+  .content {
+    width: 650px;                 /* Add this */
+    height: 500px;
+    background-color: #F5CF8E;
+  }
+  .content {
+    float: left;                  /* Add this */
+    width: 650px;
+    height: 500px;
+    background-color: #F5CF8E;
+  }
+  .page {
+    width: 900px;
+    margin: 0 auto;
+    border: 1px solid red;  /* Add this */
+  }
+  .footer {
+    overflow: hidden;
+    background-color: #D6E9FE;
+  }
+  .page {
+    width: 900px;
+    margin: 0 auto;
+  }
+  .container {
+    overflow: hidden;             /* Add this */
+    background-color: #EAEDF0;    /* Add this */
+  }
+  .column {
+    float: left;
+    width: 31%;
+    margin: 20px 1.15%;
+    height: 160px;
+    background-color: #B2D6FF;    /* Medium blue */
+  }
+  .content {
+    padding: 20px;
+  }
+  
+
+  
+  
+  p {
+    margin-bottom: 20px;
+  }
+  aside {
+    border: 15px;
+    color:rgb(190, 0, 117);
+    text-align: LEFT;
+    
+
+
+    background-color: rgb(84, 38, 153);
+    font-family: fantasy; 	
+    
+    width: 50%;  
+    box-shadow: rgb(79, 28, 92) 0px 10px 25px;
+    float: left;    
+}

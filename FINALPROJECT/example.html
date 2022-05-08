@@ -1,0 +1,106 @@
+<html>
+    <title>
+        Sample Workouts
+    </title>
+    <link rel='stylesheet' href='styles3.css'/>
+    <body background="gymbackgroundcolor.png" onLoad="startup()">
+        
+        
+        <aside>
+            <h1>SAMPLE WORKOUTS:</h1><br>
+            <h2>CALISTENICS FULL BODY</h2>
+            <p>3 Sets of 10 jumping jacks, 30 seconds of rest between sets</p>
+            <p>4 Sets of 8 squats, 40 seconds of rest between sets</p>
+            <p>5 sets of 10 push ups, 1 minute of rst between sets</p>
+            <p>3 sets of planks for 1 minute each, 1 minute and 30 seconds between sets</p>
+            
+            <h2>WORKOUT WITH DUMBELLS</h2>
+            <P>5 sets of 8 shoulder presses, 4 minute rest between sets</P>
+            <p>5 sets of 8 incline dumbell press, 4 minute rest between sets</p>
+            <p>3 sets of 8 dumbell chest press, 3 minute rest between sets</p>
+            <p>4 sets of 10 rows, 3 minute rest between sets </p>
+            <p>4 sets of 8 deadlifts, 3 minute rest between sets</p>
+            <p>6 sets of 6 dumbell squats, 3 minute rest between sets</p>
+
+            
+            
+        </aside>
+        
+        <script>
+            var imgArray = new Array(12);
+            var index = 0;
+
+            
+            function doBack() {
+                if (index > 0){
+                    index--;
+                    document.slideshow.src =
+                    imgArray[index].src;
+                }
+                return;
+            }
+            function doNext(){
+                if (index < 11)
+                {
+                    index++;
+                    document.slideshow.src =
+                    imgArray[index].src;
+                }
+                return;
+
+            }
+            
+
+                
+                
+
+            function startup()
+            {
+                imgArray[0] = new Image;
+                imgArray[0].src = "CALISTENICS.png";
+                imgArray[1] = new Image;
+                imgArray[1].src = "jump.jpg";
+                imgArray[2] = new Image;
+                imgArray[2].src = "squats.jpg";
+                imgArray[3] = new Image;
+                imgArray[3].src = "pushups.jpg";
+                imgArray[4] = new Image;
+                imgArray[4].src = "planks.jpg";
+                imgArray[5] = new Image;
+                imgArray[5].src = "WORKOUTSWITHDUMBELLS.png";
+                imgArray[6] = new Image;
+                imgArray[6].src = "shoulderpress.jpg";
+                imgArray[7] = new Image;
+                imgArray[7].src = "incline.jpg";
+                imgArray[8] = new Image;
+                imgArray[8].src = "chest.jpg";
+                imgArray[9] = new Image;
+                imgArray[9].src = "rows.jpg";
+                imgArray[10] = new Image;
+                imgArray[10].src = "deadlift.jpg";
+                imgArray[11] = new Image;
+                imgArray[11].src = "dumbellsquats.jpg";
+                
+                select();
+                return;
+
+
+            }
+        </script>
+        <div align="center">
+            <h2>SLIDESHOW OF WORKOUTS</h2>
+            <p>
+                <img name="slideshow" src="CALISTENICS.png">
+            </p>
+            <p>
+                <a href="javascript:doBack()">Back</a>
+                &nbsp;&nbsp;&nbsp;
+                <a href="javascript:doNext()">Next</a>
+            </p>
+            <br><p><a href="index.html">Back to home</a></p>
+        </div>
+        
+    </body>
+
+    
+</html>
